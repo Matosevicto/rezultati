@@ -15,7 +15,8 @@ function Semafor(){
   const [drugi, postaviDrugi] = useState(0);
 
   const resetState = () => {
-    postaviPrvi,postaviDrugi(0);
+    postaviPrvi(0);
+    postaviDrugi(0);
   };
 
     return(

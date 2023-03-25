@@ -20,12 +20,25 @@ function Stats(){
   const [zutiKartoni1, postaviZuteKartone1]= useState(0);
   const [zutiKartoni2, postaviZuteKartone2]= useState(0);
   
+  const resetState = () => {
+    postaviPosjedLopte1(0);
+    postaviPosjedLopte2(0);
+    postaviUdarce1(0);
+    postaviUdarce2(0);
+    postaviUdarceUokvir1(0);
+    postaviUdarceUokvir2(0);
+    postaviPrekrsaje1(0);
+    postaviPrekrsaje2(0);
+    postaviZuteKartone1(0);
+    postaviZuteKartone2(0);
+
+  };
     return(
 <Card className= "stats" style={{backgroundColor:'#fff'}}>
      <div className='hajduk-stats'>
        <h3>{posjedLopte1}  <button onClick={()=> postaviPosjedLopte1(posjedLopte1+1)}>+</button><button onClick={()=> postaviPosjedLopte1(posjedLopte1-1)}>-</button></h3>
        <h3>{udarci1}  <button onClick={()=> postaviUdarce1(udarci1+1)}>+</button><button onClick={()=> postaviUdarce1(udarci1-1)}>-</button></h3>
-       <h3>{udarciUokvir1}  <button onClick={()=> postaviUdarceUkvir1(udarciUokvir1+1)}>+</button><button onClick={()=> postaviUdarceUokvir1(udarciUokvir1-1)}>-</button></h3>
+       <h3>{udarciUokvir1}  <button onClick={()=> postaviUdarceUokvir1(udarciUokvir1+1)}>+</button><button onClick={()=> postaviUdarceUokvir1(udarciUokvir1-1)}>-</button></h3>
        <h3>{prekrsaji1}  <button onClick={()=> postaviPrekrsaje1(prekrsaji1+1)}>+</button><button onClick={()=> postaviPrekrsaje1(prekrsaji1-1)}>-</button></h3>
        <h3>{zutiKartoni1}  <button onClick={()=> postaviZuteKartone1(zutiKartoni1+1)}>+</button><button onClick={()=> postaviZuteKartone1(zutiKartoni1-1)}>-</button></h3>
     </div>  
@@ -35,11 +48,12 @@ function Stats(){
         <h3 className='stats-detalji' >Udarci u okvir</h3>
         <h3 className='stats-detalji'>Prekršaji</h3>
         <h3 className='stats-detalji'>Žuti kartoni</h3>
+        <button onClick={resetState}>Reset</button>
     </div>
     <div>
     <h3> <button onClick={()=> postaviPosjedLopte2(posjedLopte2+1)}>+</button><button onClick={()=> postaviPosjedLopte2(posjedLopte2-1)}>-</button>  {posjedLopte2} </h3>
        <h3>  <button onClick={()=> postaviUdarce2(udarci2+1)}>+</button><button onClick={()=> postaviUdarce2(udarci2-1)}>-</button>  {udarci2}</h3>
-       <h3>  <button onClick={()=> postaviUdarceUkvir2(udarciUokvir2+1)}>+</button><button onClick={()=> postaviUdarceUokvir2(udarciUokvir2-1)}>-</button>  {udarciUokvir2}</h3>
+       <h3>  <button onClick={()=> postaviUdarceUokvir2(udarciUokvir2+1)}>+</button><button onClick={()=> postaviUdarceUokvir2(udarciUokvir2-1)}>-</button>  {udarciUokvir2}</h3>
        <h3>  <button onClick={()=> postaviPrekrsaje2(prekrsaji2+1)}>+</button><button onClick={()=> postaviPrekrsaje2(prekrsaji2-1)}>-</button>  {prekrsaji2}</h3>
        <h3> <button onClick={()=> postaviZuteKartone2(zutiKartoni2+1)}>+</button><button onClick={()=> postaviZuteKartone2(zutiKartoni2-1)}>-</button>  {zutiKartoni2} </h3>
     </div>
