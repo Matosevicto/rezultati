@@ -1,0 +1,76 @@
+.semafor{
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 120px 0px; 
+  border-radius: 25px;
+  height: 20rem;
+  
+  
+}
+.hajduk{
+  display:block;
+  position: relative;
+  right: 40px;
+  
+}
+.dinamo{
+  display:block;
+  position: relative;
+  left: 40px;
+}
+.informacije{
+  display:block;
+}
+.datum{
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 90px;
+}
+.rezultat{
+  position: relative;
+  bottom: 190px;
+  color:black;
+  font-size: 5em;
+  
+}
+
+.hajduk-naziv{
+  
+  color: black;
+
+}
+.dinamo-naziv{
+  color: black;
+
+}
+.datum{
+  position: relative;
+   bottom:140px;
+  color: black;
+  
+}
+.timer{
+  position:relative;
+  bottom: 150px;
+}
+.promjena-rezultata{
+  position: relative;
+  bottom: 140px;
+}
+
+.stats{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 120px 0px; 
+  border-radius: 25px;
+  height: 25rem;
+  margin-top: 10px;
+}
+.stats-detalji{
+  margin: 37px;
+  color: black;
+}
+h3{
+  color: black;
+}
+
